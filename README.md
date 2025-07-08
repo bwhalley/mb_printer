@@ -26,10 +26,12 @@ I used the following hardware <br />
 1x Raspberry Pi 4 <br />
 1x QR204 Thermal Printer <br />
 1x Soldering Breadboard / Pi Hat <br />
+1x USB-mini to USB-A cable (for faster communication between printer and pi) <br />
 1x 16-32gb micro SD card <br />
 Dupont Cables <br  />
 
-The Raspberry Pi can rub headlessly with very low power draw (~5W). The printer will idle at around 0.8W and rise to ~ 10W during printing. 
+The Raspberry Pi can run headlessly with very low power draw (~5W). The printer will idle at around 0.8W and rise to ~ 10W during printing. 
 
-This was originally made to work with buttons instead of a rotary encoder. An encoder with push can cover the functionality in one component and much simpler wiring. The scripts contain code for managing the rotary encoder well. 
+This was originally made to work with buttons instead of a rotary encoder. An encoder with push can cover the functionality in one component and much simpler wiring. The scripts contain code for managing the rotary encoder well. I also changed it from using serial over GPIO communication to USB. USB seems to print much faster than serial over GPIO. I did not investigate it overly but guess the baud rate on the printer's serial is very low as it's intended for text receipts primarily. 
 
+Depending on your device and configuration, you may need to adjust the device names or locations in code.
