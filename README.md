@@ -27,7 +27,7 @@ I used the following hardware <br />
 1x QR204 Thermal Printer <br />
 1x Soldering Breadboard / Pi Hat <br />
 1x USB-mini to USB-A cable (for faster communication between printer and pi) <br />
-1x 16-32gb micro SD card <br />
+1x 16-32gb micro SD card (8 GB will not be enough for all the images + OS)<br />
 Dupont Cables <br  />
 
 The Raspberry Pi can run headlessly with very low power draw (~5W). The printer will idle at around 0.8W and rise to ~ 10W during printing. 
